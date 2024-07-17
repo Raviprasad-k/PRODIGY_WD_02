@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease; /* Smooth background color transition */
+  }
+  
+  .stopwatch {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease; /* Smooth background color transition */
+  }
+  
+  .display {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    transition: color 0.5s ease; /* Smooth text color transition */
+  }
+  
+  .controls button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth button background color and transform (scale) animation */
+  }
+  
+  .controls button#startPauseButton {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .controls button#startPauseButton.paused {
+    background-color: #FFC107;
+  }
+  
+  .laps {
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .laps li {
+    padding: 5px;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth background color transition for lap items */
+  }
+  
